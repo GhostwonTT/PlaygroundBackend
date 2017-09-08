@@ -7,7 +7,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/manuals/starter', function(req, res, next) {
-    res.sendFile(path.resolve('../public/manuals/starter_kit.pdf'));
-})
+router.get('/manuals/:filename', function (req, res, next) {
+    var filename = req.params.filename;
+    res.sendFile(path.resolve('../public/manuals/' + filename + '.pdf'));
+});
+
 module.exports = router;
