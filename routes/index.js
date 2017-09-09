@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/manuals/:filename', function (req, res, next) {
     var filename = req.params.filename;
-    res.sendFile(path.resolve('../public/manuals/' + filename + '.pdf'));
+    res.sendFile(path.resolve(__dirname + '/../public/manuals/' + filename + '.pdf'));
 });
 
 module.exports = router;
