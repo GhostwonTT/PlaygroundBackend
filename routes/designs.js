@@ -6,6 +6,7 @@ router.get('/sample', function (req, res, next) {
 });
 
 function buildSampleDesign() {
+    var list = {};
     var sample = {};
     sample['id'] = '3063';
     sample['name'] = 'Scoop and Shaft';
@@ -39,7 +40,8 @@ function buildSampleDesign() {
         'Grinder\n' +
         'Welder';
     sample['picture'] = 'https://playgroundideas.org/wp-content/uploads/design_gallery/Scoop%20and%20Shaft-1024x671.jpg';
-    return JSON.stringify(sample);
+    list['3063'] = sample;
+    return JSON.stringify(list);
 }
 
 module.exports = router;
