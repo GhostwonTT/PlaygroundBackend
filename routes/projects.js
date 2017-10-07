@@ -9,7 +9,7 @@ function buildSampleProject() {
     var obj = JSON.parse(
         `{
         "ProjectList": [
-            { "id":"platypusTest1",
+            { "id":"0",
                 "name":"Go Play Project",
                 "location":"Thailand",
                 "requireFunding":true,
@@ -26,7 +26,7 @@ function buildSampleProject() {
                 "MonetaryAmount":"50000"
             },
     
-            { "id":"platypusTest2",
+            { "id":"1",
                 "name":"Go Play Project",
                 "location":"Australia",
                 "requireFunding":true,
@@ -42,7 +42,7 @@ function buildSampleProject() {
                 "MonetaryAmount":"20000",
                 "MonetaryAmount":"50000"
             },
-            { "id":"platypusTest3",
+            { "id":"2",
                 "name":"Go Play Project",
                 "location":"China",
                 "requireFunding":true,
